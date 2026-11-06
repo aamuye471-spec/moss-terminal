@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moss Terminal</string>
+    <string name="setup_title">首次启动设置</string>
+    <string name="setup_extracting">正在释放 Claude Code（约 320 MB，请稍候）…</string>
+    <string name="setup_done">设置完成</string>
+    <string name="setup_failed_title">设置失败</string>
+    <string name="retry">重试</string>
+    <string name="exit_app">退出</string>
+    <string name="login_hint">首次使用：在菜单 → 设置 API Key 里粘贴你的 DeepSeek API Key，重启会话后就能用</string>
+    <string name="no_root">未检测到 root，将以普通模式运行（部分功能不可用）</string>
+    <string name="root_ok">已检测到 root</string>
+    <string name="session_finished">会话已结束，点“菜单 → 重启会话”可重新开始</string>
+    <string name="menu_restart">重启会话</string>
+    <string name="menu_root_toggle">Root 模式开关</string>
+    <string name="menu_network">网络诊断</string>
+    <string name="menu_base_url">设置中转地址</string>
+    <string name="net_diag_title">网络诊断</string>
+    <string name="net_diag_running">正在测 DNS 和连通性，请稍候…</string>
+    <string name="base_url_hint">https://你的中转域名（留空 = 用默认 DeepSeek 地址）</string>
+    <string name="base_url_caveat">默认走 DeepSeek（api.deepseek.com/anthropic），不用填也能用；这里是给你改成别的地址的入口。\n\n之前连不上 Anthropic 是因为手机解析不了 api.anthropic.com（EAI_AGAIN）。v1.6 起默认不再连 Anthropic，改走 DeepSeek。\n\n填自定义地址就是改目的地：把 ANTHROPIC_BASE_URL 指向一个讲 Anthropic API 格式的中转站，重启会话后生效。留空 = 用默认 DeepSeek 地址。\n\n用自定义地址前请知道两件事（不瞒你）：\n1）客户端会把中转地址的 host 名（只有 host，没有路径、参数和凭证）单独上报给 GrowthBook。\n2）2026-06-30 有用户披露过一起隐写标记事件：中转地址 + 本机时区是 Asia/Shanghai 或 Asia/Urumqi 时，代理域名会与一份隐藏清单比对，结果藏进系统提示词。你的时区是 Asia/Hong_Kong，不在这两个里面。\n\n中转站要你自己找，本 App 不提供、不推荐任何中转站。</string>
+    <string name="menu_api_key">设置 API Key</string>
+    <string name="menu_floating">悬浮窗</string>
+    <string name="menu_launch_log">查看启动日志</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <string name="api_key_hint">输入 DeepSeek API Key（只存本机，不上传）</string>
+    <string name="about_text">Moss Terminal：手机上的 Claude Code.\n\nClaude Code 2.1.318（musl aarch64）+ 终端。\nRoot 模式下以 root 身份运行。\n\nv1.6：默认走 DeepSeek API（ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic），不再连 Anthropic；API Key 走 ANTHROPIC_AUTH_TOKEN。\nv1.5：悬浮窗变成 Clawd 螃蟹桌宠（点螃蟹展开快捷按钮，长按切迷你模式）；v1.4：顶部常驻菜单/API Key/悬浮窗/网络诊断按钮；支持填中转地址（ANTHROPIC_BASE_URL）。\n\n红线：绝对不动 system 分区。</string>
+    <string name="channel_keepalive">会话保活</string>
+    <string name="keepalive_text">Claude Code 会话运行中</string>
+    <string name="root_lost">root 已消失，已降级为普通模式</string>
+    <string name="launch_failed_title">启动失败</string>
+    <string name="launch_log_title">启动日志</string>
+    <string name="launch_log_empty">暂无启动日志。</string>
+    <string name="launch_log_clear">清空</string>
+    <string name="root_missing_title">未检测到 root</string>
+    <string name="root_missing_msg">没找到可用的 root。普通模式下 Android 10+ 可能拦住 Claude Code 运行，终端可能打不开。建议先获取 root 再回来，也可以先试试普通模式。</string>
+    <string name="root_missing_continue">继续（普通模式）</string>
+    <string name="floating_title">开启悬浮窗</string>
+    <string name="floating_explain">悬浮窗是在屏幕上浮着的一排快捷按钮，点一下就自动把命令填进终端（比如登录、体检、备份），不用你打字。\n\n需要你在系统设置里允许“Moss Terminal 在其他应用的上层显示”。只用来显示按钮，不会偷看其他应用。</string>
+    <string name="floating_open_settings">去开启</string>
+    <string name="floating_on">悬浮窗已开启，点一下按钮就自动填进终端</string>
+    <string name="floating_off">悬浮窗已关闭</string>
+    <string name="floating_no_session">终端还没启动，先打开 Moss Terminal</string>
+</resources>

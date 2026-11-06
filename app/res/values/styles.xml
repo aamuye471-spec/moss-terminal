@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="KeyBarButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:background">#FF3A3A3A</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- v1.4 顶部常驻按钮：大、显眼 -->
+    <style name="TopBarButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:background">#FF3A3A3A</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 菜单按钮用绿色，最显眼 -->
+    <style name="TopBarButtonMenu" parent="@style/TopBarButton">
+        <item name="android:background">#FF2E7D32</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

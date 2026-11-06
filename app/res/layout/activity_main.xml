@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF1E1E1E"
+    android:orientation="vertical">
+
+    <!-- v1.4 顶部常驻按钮：一直可见，点一下就行，不用找菜单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2D2D2D"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btn_menu_top"
+            style="@style/TopBarButtonMenu"
+            android:text="☰ 菜单" />
+
+        <Button
+            android:id="@+id/btn_api_key_top"
+            style="@style/TopBarButton"
+            android:text="API Key" />
+
+        <Button
+            android:id="@+id/btn_floating_top"
+            style="@style/TopBarButton"
+            android:text="悬浮窗：关" />
+
+        <Button
+            android:id="@+id/btn_net_top"
+            style="@style/TopBarButton"
+            android:text="网络诊断" />
+
+    </LinearLayout>
+
+    <com.termux.view.TerminalView
+        android:id="@+id/terminal_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2D2D2D"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/key_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/key_esc"
+                style="@style/KeyBarButton"
+                android:text="ESC" />
+
+            <Button
+                android:id="@+id/key_tab"
+                style="@style/KeyBarButton"
+                android:text="TAB" />
+
+            <Button
+                android:id="@+id/key_ctrl"
+                style="@style/KeyBarButton"
+                android:text="CTRL" />
+
+            <Button
+                android:id="@+id/key_up"
+                style="@style/KeyBarButton"
+                android:text="↑" />
+
+            <Button
+                android:id="@+id/key_down"
+                style="@style/KeyBarButton"
+                android:text="↓" />
+
+            <Button
+                android:id="@+id/key_left"
+                style="@style/KeyBarButton"
+                android:text="←" />
+
+            <Button
+                android:id="@+id/key_right"
+                style="@style/KeyBarButton"
+                android:text="→" />
+
+            <Button
+                android:id="@+id/key_paste"
+                style="@style/KeyBarButton"
+                android:text="粘贴" />
+
+            <Button
+                android:id="@+id/key_menu"
+                style="@style/KeyBarButton"
+                android:text="菜单" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
